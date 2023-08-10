@@ -1,0 +1,52 @@
+@import "/src/assets/styles/default-imports.scss";
+
+.button_default {
+  border-radius: 0.25rem;
+  border: 2px solid $black;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+  }
+}
+
+.button_blue {
+  @extend .button_default;
+  background-color: $blue;
+  border-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+.button_green {
+  @extend .button_default;
+  background-color: $green;
+  border-color: $green;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    border-color: $green;
+    color: $green;
+  }
+}
+
+.button_transparent_blue {
+  @extend .button_default;
+  background-color: transparent;
+  border-color: $blue;
+  color: $black;
+
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+}
